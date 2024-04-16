@@ -11,7 +11,7 @@ const topBtn = document.querySelector(".topBtn");
 const show = document.querySelector(".show");
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 2000) {
+    if (window.scrollY > 500) {
         topBtn.classList.add("show");
     } else {
         topBtn.classList.remove("show");
@@ -19,4 +19,7 @@ window.addEventListener("scroll", function () {
 })
 topBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
+})
+AOS.init({
+  duration:1200,
 })

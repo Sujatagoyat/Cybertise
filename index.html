@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybertise</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/png/fav-icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-body-clr">
-    <header class="bg-hero-img min_vh_100 min_h_80 d-flex   w-100 flex-column ">
-       
+    <header class="bg-hero-img min-vh-100 d-flex   w-100 flex-column ">
             <nav class="  nav-bg-clr">
                 <div class="my-container d-flex align-items-center justify-content-between h-90">
-                <img src="./assets/images/svg/logo.svg" alt="logo.svg">
+                <a href=""><img class="max-w-200" src="./assets/images/svg/logo.svg" alt="logo.svg"></a>
                 <div class="d-flex align-items-center gap-lg-40 ">
                     <ul class="d-flex align-items-center justify-content-center mb-0 ps-0 gap-32 menulist">
-                        <li><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Home</a></li>
-                        <li><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">About</a></li>
-                        <li><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Product</a></li>
-                        <li><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Contact</a></li>
+                        <li><a href="#Home" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Home</a></li>
+                        <li><a href="#About" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">About</a></li>
+                        <li><a href="#Product" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Product</a></li>
+                        <li><a href="#Contact" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative opacity_80">Contact</a></li>
                     </ul>
                     <div class="d-sm-block d-none">
                         <img src="./assets/images/svg/flag.svg" alt="flag.svg">
@@ -36,9 +37,9 @@
             </div>
             </nav>
        
-        <div class="custom-container d-flex align-items-center flex-grow justify-content-center  flex-column">
-            <img src="./assets/images/svg/hero-img.svg" alt="hero-img.svg">
-            <h1 class="fw-600 text-64 lh-61 ff-outfit clr-white max-w-582 text-center pt-lg-23 pb-lg-32
+        <div class="custom-container d-flex align-items-center flex-grow justify-content-center  flex-column" id="Home">
+            <img class="w-152" src="./assets/images/svg/hero-img.svg" alt="hero-img.svg">
+            <h1 class="fw-600 text-64 lh-61 ff-outfit clr-white max-w-582 text-center pt-lg-23 pb-lg-32 py-10
         ">Experts in Cyber Security</h1>
             <button class="fw-500 text-16 lh-24 clr-black ff-outfit dis-btn">Discover</button>
         </div>
@@ -47,7 +48,7 @@
     <!-- ============================== 1K+ ==================================== -->
     <section class="bg-sec-clr overflow-hidden pt-lg-31 pb-lg-90 pb-30">
         <div class="custom-container">
-            <div class="outer-box ">
+            <div class="outer-box " data-aos="fade-down">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <p class="fw-500 text-48 lh-52 ff-outfit clr-green mb-0 pb-4 text-center">1K+</p>
@@ -68,10 +69,10 @@
         </div>
     </section>
     <!-- ============================ Data is safe ================================ -->
-    <section class="pt-13 position-relative z-2 pb-lg-60">
+    <section class="pt-13 position-relative z-2 pb-lg-60" id="About">
         <div class="custom-container">
-            <div class="row d-flex  ">
-                <div class="col-lg-6 ">
+            <div class="row d-flex justify-content-between  ">
+                <div class="col-lg-5 " data-aos="zoom-in">
                     <img class="w-100 max-w-513" src="./assets/images/png/sure-img.png" alt="sure">
                 </div>
                 <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center py-lg-50 ">
@@ -81,8 +82,8 @@
                     <div class="data-ellipse-2 d-lg-block d-none position-absolute">
                         <img class="w-100" src="./assets/images/png/data-ellipse-2.png" alt="ellipse">
                     </div>
-                    <h2 class="fw-400 text-48 lg-57 clr-white ff-outfit max-w-527 ">Are you sure your <span
-                            class="clr-green"> Data is Safe? </span>Neither are we.</h2>
+                    <h2 class="fw-400 text-48 lg-57 clr-white ff-outfit max-w-527 ">Are You Sure Your <span
+                            class="clr-green"> Data Is Safe? </span>Neither Are We.</h2>
                     <div class="green-line position-relative ">
                         <p class="fw-400 text-16 lh-24 ff-outfit clr-white max-w-511 ">In today's digital world, the
                             risk of cyber attacks is constantly increasing. It is no longer the hackers themselves who
@@ -101,7 +102,7 @@
         <div class="data-linear-gradient position-absolute"></div>
     </section>
     <!-- ============================= our-services ==================================== -->
-    <section class="services-bg-img pt-30 position-relative z-1 ">
+    <section class="services-bg-img pt-30 position-relative z-1 " id="Product">
         <div class="custom-container">
             <h2 class="fw-400 text-48 lh-57 ff-outfit clr-white text-center ">Our <span class="clr-green">
                     Services</span></h2>
@@ -110,7 +111,7 @@
                 dui est. </p>
             <div class="row d-flex align-items-center justify-content-center pt-lg-40 pb-lg-43">
                 <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center flex-column pt-lg-0 pt-3">
-                    <div class="service-card d-flex flex-column justify-content-center align-items-center">
+                    <div class="service-card d-flex flex-column justify-content-center align-items-center" data-aos="flip-left">
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="56" height="56" rx="28" fill="#BAFF00" fill-opacity="0.1" />
                             <g clip-path="url(#clip0_0_28)">
@@ -203,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center flex-column pt-lg-0 pt-3">
-                    <div class="service-card d-flex flex-column justify-content-center align-items-center">
+                    <div class="service-card d-flex flex-column justify-content-center align-items-center" data-aos="flip-left">
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="56" height="56" rx="28" fill="#BAFF00" fill-opacity="0.1"/>
                             <g clip-path="url(#clip0_0_62)">
@@ -222,12 +223,12 @@
                             </svg>
                             
                         <p class="fw-600 text-24 lh-33 ff-outfit clr-white text-center pt-lg-4">Crowd-Sourced Pentests</p>
-                        <p class="fw-400 text-16 lh-24 ff-outfit clr-white max-w-328 text-center">Cybertise advances beyond pen tests, employing expert teams to comprehensively probe targets from multiple angles, ensuring precise, efficient vulnerability
+                        <p class="fw-400 text-16 lh-24 ff-outfit clr-white  text-center max-w- 319">Cybertise advances beyond pen tests, employing expert teams to comprehensively probe targets from multiple angles, ensuring precise, efficient vulnerability
                             identification.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pt-lg-0 pt-3 d-flex align-items-center justify-content-center flex-column ">
-                    <div class="service-card d-flex flex-column justify-content-center align-items-center">
+                    <div class="service-card d-flex flex-column justify-content-center align-items-center" data-aos="flip-left">
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="56" height="56" rx="28" fill="#BAFF00" fill-opacity="0.1"/>
                             <g clip-path="url(#clip0_0_77)">
@@ -242,7 +243,7 @@
                             </defs>
                             </svg>
                         <p class="fw-600 text-24 lh-33 ff-outfit clr-white text-center pt-lg-4">VRP</p>
-                        <p class="fw-400 text-16 lh-24 ff-outfit clr-white max-w-328 text-center">Cybertise's VRP (BugBounty) is the ultimate security step, eradicating last vulnerabilities with swift incident response. Elevates security beyond pentesting.</p>
+                        <p class="fw-400 text-16 lh-24 ff-outfit clr-white max-w-310 text-center">Cybertise's VRP (BugBounty) is the ultimate security step, eradicating last vulnerabilities with swift incident response. Elevates security beyond pentesting.</p>
                     </div>
                 </div>
             </div>
@@ -255,15 +256,15 @@
             <img class="w-100" src="./assets/images/png/offensive-1.png" alt="offensive-img">
         </div>
         <div class="custom-container">
-            <div class="row flex-lg-row flex-column-reverse row-gap-3">
-                <div class="col-lg-6">
+            <div class="row flex-lg-row flex-column-reverse row-gap-3 justify-content-between" >
+                <div class="col-lg-5">
                     <h2 class="fw-400 text-48 lh-57 ff-outfit clr-white max-w-527 ">Offensive <span class="clr-green"> Security Experts </span></h2>
                     <div class="left_line position-relative">
                         <p class="fw-400 text-16 lg-24 ff-outfit clr-white max-w-507 ps-4 ">Cybertise offers offensive security services that help your company to make the systems of your external IT landscape more secure. This approach simulates attacks to expose vulnerabilities that may not have been detected by defensive measures. In addition, this strategy can help to test and evaluate the effectiveness of existing security measures.</p>
                         <p class="fw-400 text-16 lg-24 ff-outfit clr-white max-w-507 ps-4 ">Our core competence lies in the implementation of various pentesting services that are specially tailored to the needs of our customers. In addition to this, we also offer other services in this area. Below you will find an overview of our service portfolio.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up">
                     <img class="w-100 max-w-581" src="./assets/images/png/offensive-security.png" alt="offensive-img">
                 </div>
             </div>
@@ -278,8 +279,8 @@
             <img class="w-1 00" src="./assets/images/png/f-ellipse-2.png" alt="ellipse">
         </div>
         <div class="custom-container">
-            <div class="row  row-gap-3">
-                <div class="col-lg-6">
+            <div class="row  row-gap-3 justify-content-between">
+                <div class="col-lg-5" data-aos="slide-up">
                    <img class="w-100 max-w-476" src="./assets/images/png/further-img.png" alt="img">
                 </div>
                 <div class="col-lg-6">                   
@@ -304,12 +305,12 @@
         <div class="infra-ellipse-3"></div>
         <div class="custom-container">
             <h1 class="fw-400 text-48 lh-57 ff-outfit clr-white max-w-725 mx-auto text-center pb-lg-60 pb-30">Decentralized infrastructure, <span class="clr-green"> Globally Distributed.</span></h1>
-            <img class="w-100" src="./assets/images/png/map.png" alt="map">
+            <img class="w-100" data-aos="flip-up" src="./assets/images/png/map.png" alt="map">
         </div>
      </section>
      <!-- =================================== get into touch ========================================== -->
-     <section class="pt-lg-171 pb-lg-140 py-50">
-        <div class="custom-container">
+     <section class="pt-lg-171 pb-lg-140 py-50" id="Contact">
+        <div class="custom-container" data-aos="flip-right">
             <div class="get-box d-flex align-items-center justify-content-center flex-column position-relative z-2">
                 <!-- <div class="get-ellipse position-absolute">
                     <img src="./assets/images/png/Ellipse-839.png" alt="ellipse">
@@ -326,11 +327,9 @@
         </div>
      </section>
      <!-- ==================================== footer =========================================== -->
-     <footer class="footer-bg-img position-relative overflow-x- hidden  ">
-        <div class="footer-ellipse-1 d-lg-block d-none">
-            <img class="w-100 h-397" src="./assets/images/png/footer-ellipse.png" alt="ellipse">
-        </div>
-        <div class="custom-container">
+     <footer class="footer-bg-img position-relative overflow-x- hidden  " >
+        <div class="footer-ellipse-1"></div>
+        <div class="custom-container" data-aos="fade-up">
             <div class="row d-flex  justify-content-between pt-lg-48">
                 <div class="col-lg-4 ">
                     <img class="w-100 cursor-pointer max-w-235" src="./assets/images/svg/f-logo.svg" alt="f-logo">
@@ -340,18 +339,18 @@
                     <div class="row ">
                          <div class="col-lg-4 col-6">
                             <ul class="mb-0 ps-0">
-                                <li class="fw-500 text-16 lh-24 ff-outfit clr-white mb-lg-18">Quick links</li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative ">Home</a></li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative ">About</a></li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative">Product</a></li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative ">Contact</a></li>
+                                <li class="fw-500 text-16 lh-24 ff-outfit clr-white mb-lg-18 mb_10">Quick links</li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative ">Home</a></li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative ">About</a></li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative">Product</a></li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative ">Contact</a></li>
                             </ul>
                          </div>
                          <div class="col-lg-4 col-6">
                             <ul class="mb-0 ps-0">
-                                <li class="fw-500 text-16 lh-24 ff-outfit clr-white mb-lg-18">Links</li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative ">Privacy Policy</a></li>
-                                <li class="mb-10"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white nav_link bottom_line position-relative  text-nowrap">Terms of Service</a></li>
+                                <li class="fw-500 text-16 lh-24 ff-outfit clr-white mb-lg-18 mb_10 ">Links</li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative ">Privacy Policy</a></li>
+                                <li class="mb-lg-10 mb-6"><a href="" class="fw-400 text-16 lh-24 ff-outfit clr-white f_link bottom_line position-relative  text-nowrap">Terms of Service</a></li>
                             </ul>
                          </div>
                          <div class="col-lg-4 col-6">
@@ -367,7 +366,7 @@
                                     </svg></a>
                                     <a href="mailto:@Cybertise.com" class="fw-400 text-16 lh-24 ff-outfit clr-white mb-10 mb-0 bottom_line position-relative nav_link">@Cybertise.com</a>
                                 </li>
-                                <li class="d-flex align-items -center justify-c ontent-center gap-3 mb-10 ">
+                                <li class="d-flex align-items -center justify-c ontent-center gap-3 mb-lg-10 mb-6 ">
                                     <a href="" class="svg-box d-flex align-items-center justify-content-center">
                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.83366 0.69566C3.14199 1.06233 2.59616 1.47483 2.19616 1.93316C1.46699 2.76233 1.02116 3.65816 0.804492 4.73316C0.704492 5.24149 0.704492 6.56233 0.804492 7.11649C0.966992 7.98316 1.20866 8.72483 1.57949 9.52066C1.80449 9.99149 3.97116 13.7498 4.33366 14.2915C5.57116 16.1373 7.27116 17.379 9.04199 17.729C10.317 17.979 11.8295 17.7415 12.9087 17.1165C13.4212 16.8207 13.4712 16.779 13.6087 16.5332C13.7212 16.329 13.7295 16.279 13.7253 15.9165C13.7212 15.279 13.467 14.6415 12.792 13.5832C11.967 12.2915 11.3878 11.7998 10.592 11.7248C10.1837 11.6873 9.86699 11.779 9.27116 12.1207C8.57533 12.5165 8.59616 12.5082 8.36699 12.5082C8.10033 12.504 7.70449 12.3207 7.47949 12.0915C7.25866 11.8707 5.21283 8.34983 5.13783 8.06233C5.02533 7.63733 5.10866 7.19149 5.34199 6.96233C5.41699 6.89149 5.65866 6.72899 5.87533 6.60399L6.27116 6.37899L6.32116 6.47899C6.39199 6.61233 10.8378 10.0998 11.1045 10.229C11.5337 10.4415 11.9503 10.4457 12.4128 10.2498C12.5378 10.1957 13.7837 9.24566 15.6545 7.77483L18.6878 5.39149L18.7003 9.26649C18.7087 13.1165 18.7087 13.1415 18.6253 13.229C18.542 13.3082 18.4837 13.3123 16.2795 13.3332C14.2212 13.354 14.0087 13.3623 13.9087 13.4248C13.6837 13.5748 13.6795 13.9915 13.9045 14.1665C14.0128 14.2498 14.0378 14.254 16.392 14.2415L18.7712 14.229L18.9837 14.1165C19.2712 13.9665 19.5253 13.6665 19.6045 13.3957C19.6587 13.2082 19.667 12.604 19.6587 8.84983L19.6462 4.52066L19.5212 4.29983C19.3753 4.03316 19.2253 3.89983 18.917 3.75399L18.6878 3.64566L12.8128 3.63316L6.93783 3.62066L6.58366 2.92483C6.12116 2.01649 5.81283 1.55399 5.40033 1.14149C4.98783 0.73316 4.75866 0.612326 4.35449 0.591494C4.09616 0.578993 4.03783 0.591494 3.83366 0.69566ZM4.55033 1.63733C4.91283 1.91233 5.31283 2.49566 5.78366 3.43733C6.14199 4.14983 6.22533 4.40816 6.22533 4.82066C6.22949 5.09983 6.21283 5.17899 6.14199 5.27899C6.09616 5.34149 5.79616 5.54983 5.47533 5.73316C4.71283 6.18316 4.58366 6.29983 4.37949 6.72066C4.10866 7.27483 4.07116 7.97066 4.28366 8.52899C4.32533 8.63733 4.84616 9.57483 5.44199 10.604C6.38366 12.2332 6.55449 12.5082 6.79199 12.7457C7.10449 13.0623 7.51699 13.2998 7.92116 13.3957C8.50449 13.5332 8.84199 13.454 9.65449 12.9957C9.97533 12.8123 10.3087 12.6498 10.392 12.6373C10.7795 12.5748 11.3462 13.0873 11.9503 14.0415C12.5462 14.979 12.8128 15.5873 12.7837 15.9415C12.7712 16.0873 12.7503 16.1082 12.4378 16.2957C12.017 16.5457 11.3503 16.7665 10.742 16.8582C9.32949 17.0665 7.87533 16.5582 6.55033 15.3998C5.98366 14.904 5.36699 14.1707 4.94616 13.4832C4.33783 12.4957 2.53783 9.32899 2.36283 8.94566C2.11283 8.38316 1.90866 7.76649 1.78366 7.19983C1.70033 6.82483 1.68783 6.65399 1.69199 5.87483C1.69199 5.02899 1.70033 4.95399 1.80866 4.56233C1.94616 4.05816 2.21283 3.48316 2.50033 3.06649C2.81699 2.60816 3.44616 2.01649 3.91699 1.73733C4.13366 1.60816 4.32533 1.50399 4.34199 1.49983C4.35449 1.49983 4.45033 1.56233 4.55033 1.63733ZM18.1628 4.59983C18.1545 4.60399 16.7837 5.68316 15.117 6.99149C13.3003 8.41649 12.0295 9.38733 11.9337 9.41649C11.8212 9.45399 11.742 9.45816 11.6295 9.42483C11.5378 9.39566 10.6503 8.72483 9.27116 7.64149C8.05449 6.68733 7.02949 5.88316 6.98783 5.85399C6.91283 5.80399 6.91699 5.79149 7.01699 5.59149C7.13783 5.35816 7.22949 4.88733 7.19199 4.70399L7.17116 4.58316H12.6753C15.7045 4.58316 18.1712 4.59149 18.1628 4.59983Z" fill="white"/>
@@ -377,12 +376,12 @@
                                     </li>
                                 <li class="fw-400 text-16 lh-24 ff-outfit clr-white mb-3 text-nowrap ">Follow us </a></li>
                                 <li class="d-flex align-items-center justify-con tent-center gap-10">
-                                    <a href="" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
+                                    <a href="https://www.facebook.com/" target="_blank" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
                                             <svg class="zoom" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.53828 0.199219C3.90469 0.796875 3.04141 2.11172 2.84219 4.30312L2.74922 5.3125H1.38125H0V6.97266V8.63281H1.39453H2.78906V12.8164V17H4.98047H7.17188V12.8164V8.63281H8.56641H9.96094V6.97266V5.3125H8.56641H7.17188V4.71484C7.17188 3.43984 7.70312 3.05469 9.46953 3.05469H10.3594V1.52734V0L8.20781 0.0132809C6.70703 0.0132809 5.88359 0.0796871 5.53828 0.199219ZM9.5625 1.52734V2.25781H8.80547C7.82266 2.25781 6.99922 2.62969 6.64062 3.21406C6.42813 3.57266 6.375 3.87812 6.375 4.94062V6.24219H7.76953H9.16406V7.03906V7.83594H7.76953H6.375V12.0195V16.2031H4.98047H3.58594V12.0195V7.83594H2.19141H0.796875V7.03906V6.25547L2.16484 6.21562L3.51953 6.17578L3.6125 4.98047C3.79844 2.77578 4.35625 1.71328 5.63125 1.11562C6.22891 0.836718 6.50781 0.796875 7.94219 0.796875H9.5625V1.52734Z" fill="white"/>
                                             </svg>                                       
                                         </a>
-                                        <a href="" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
+                                        <a href="https://www.instagram.com/" target="_blank" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
                                             <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9.00001 12.5554C9.94301 12.5554 10.8474 12.1808 11.5142 11.514C12.181 10.8473 12.5556 9.94288 12.5556 8.99989C12.5556 8.0569 12.181 7.15253 11.5142 6.48573C10.8474 5.81894 9.94301 5.44434 9.00001 5.44434C8.05702 5.44434 7.15265 5.81894 6.48586 6.48573C5.81906 7.15253 5.44446 8.0569 5.44446 8.99989C5.44446 9.94288 5.81906 10.8473 6.48586 11.514C7.15265 12.1808 8.05702 12.5554 9.00001 12.5554Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M1 12.5556V5.44444C1 4.2657 1.46825 3.13524 2.30175 2.30175C3.13524 1.46825 4.2657 1 5.44444 1H12.5556C13.7343 1 14.8648 1.46825 15.6983 2.30175C16.5317 3.13524 17 4.2657 17 5.44444V12.5556C17 13.7343 16.5317 14.8648 15.6983 15.6983C14.8648 16.5317 13.7343 17 12.5556 17H5.44444C4.2657 17 3.13524 16.5317 2.30175 15.6983C1.46825 14.8648 1 13.7343 1 12.5556Z" stroke="white"/>
@@ -391,12 +390,12 @@
                                                 
                                                                                       
                                         </a>
-                                        <a href="" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
+                                        <a href="https://twitter.com/?lang=en" target="_blank" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
                                             <svg  width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M11.0875 0.0180431C10.885 0.0479165 10.5231 0.144191 10.3305 0.21723C9.23502 0.625574 8.38182 1.59497 8.08632 2.76688C8.01663 3.04907 7.96682 3.62672 7.99003 3.9056L8.01 4.14459H7.8141C7.53525 4.14459 6.84804 4.0251 6.44298 3.90892C5.36406 3.59353 4.27515 3.00259 3.21943 2.15603C2.82437 1.84064 2.07076 1.14347 1.88485 0.921044C1.47319 0.433024 1.19764 0.608975 0.882251 1.55846C0.616662 2.35854 0.639906 3.14534 0.948652 3.94546C1.04493 4.20102 1.31715 4.72888 1.40347 4.83512C1.42007 4.85841 1.37027 4.83844 1.29059 4.79203C1.11464 4.69243 1.01173 4.68911 0.87229 4.77537C0.732858 4.85841 0.71626 4.93804 0.739496 5.41941C0.782661 6.29258 1.11797 7.09929 1.67902 7.68359C1.78857 7.79314 1.94129 7.93923 2.02428 8.00561L2.17367 8.1251L2.08404 8.15833C1.81513 8.26125 1.83173 8.57664 2.14048 9.19077C2.55878 10.0208 3.25927 10.635 4.11911 10.9171C4.23531 10.9537 4.3515 10.9935 4.37806 11.0034C4.50754 11.0466 3.65765 11.5047 3.16631 11.6575C2.65173 11.8201 2.21352 11.8865 1.55618 11.9031C1.18104 11.9164 0.809212 11.9064 0.603387 11.8832C0.238201 11.84 0.10873 11.8699 0.0323678 12.0093C-0.0107893 12.0924 -0.0107893 12.2982 0.0323678 12.3778C0.0788479 12.4675 0.782662 12.929 1.18104 13.1315C1.99108 13.5464 2.87085 13.8186 3.983 13.9913C4.53077 14.0776 6.34006 14.0809 6.92767 13.9946C7.65806 13.8917 8.77353 13.5598 9.54378 13.2178C10.3206 12.8759 11.1439 12.3811 11.7514 11.8965C12.432 11.352 13.2454 10.4358 13.7234 9.67214C14.6331 8.22802 15.2207 6.28927 15.2937 4.50316L15.3136 3.98524L15.8481 3.44081C16.4225 2.85984 16.6914 2.54777 16.8807 2.2357C17.0732 1.917 17.0301 1.66137 16.7711 1.59165C16.6616 1.55846 16.625 1.56841 16.3826 1.6846C16.2366 1.75764 16.0739 1.82736 16.0241 1.84064C15.9278 1.86388 15.9278 1.86056 16.0839 1.65141C16.5055 1.0804 16.6449 0.512701 16.4092 0.326789C16.2731 0.220553 16.1104 0.240466 15.8714 0.393182C15.3601 0.725171 14.6862 0.957555 14.238 0.957555C14.102 0.957555 14.0555 0.940957 13.9525 0.844682C13.5143 0.45626 12.8105 0.127593 12.2096 0.0279954C12.0104 -0.00187798 11.2667 -0.0118387 11.0875 0.0180431ZM12.3988 0.774966C12.8702 0.914398 13.1591 1.0804 13.6637 1.50534L13.8197 1.63813L14.1882 1.63149C14.5501 1.62485 14.9385 1.55846 15.2638 1.44226L15.4066 1.39246L15.3369 1.48873C15.3004 1.54185 15.1111 1.72445 14.9186 1.89044C14.726 2.05975 14.5567 2.22243 14.5368 2.25562C14.4439 2.43157 14.56 2.6872 14.7559 2.737C14.8356 2.75692 15.5162 2.67724 15.6589 2.63076C15.6921 2.62081 15.4763 2.84656 15.1842 3.1387L14.6497 3.66322L14.6297 4.3438C14.5799 6.08674 14.1318 7.70679 13.3151 9.08785C12.1299 11.0897 10.2608 12.4376 7.69129 13.1415C7.18995 13.2808 6.82144 13.3339 6.05459 13.3771C4.54073 13.4668 2.96712 13.2078 1.84833 12.6899C1.65246 12.6003 1.66906 12.5936 2.10728 12.5605C2.44591 12.5339 3.09327 12.4044 3.43522 12.2949C4.10915 12.0725 4.80964 11.6508 5.28102 11.1827C5.50352 10.9603 5.51015 10.947 5.51015 10.7876C5.51015 10.6449 5.49689 10.6117 5.40723 10.5387C5.33746 10.4789 5.26777 10.4523 5.17819 10.4523C4.65693 10.4523 3.90996 10.1602 3.42194 9.76181C3.19287 9.57594 2.75465 8.99164 2.75465 8.87538C2.75465 8.86212 2.78453 8.86212 2.81773 8.87538C2.91401 8.90529 3.43522 8.83229 3.62777 8.7592C3.9 8.65628 3.98632 8.45715 3.8502 8.23797C3.79709 8.1517 3.74397 8.11847 3.54478 8.05873C2.7115 7.81302 1.99441 7.20884 1.67238 6.48177C1.60266 6.3191 1.50639 6.01034 1.44662 5.73481L1.42671 5.64854L1.61926 5.71492C1.85165 5.79787 2.37951 5.8311 2.51894 5.77135C2.64178 5.72155 2.73473 5.53899 2.70485 5.40284C2.69157 5.34972 2.58866 5.20363 2.46251 5.07088C1.66242 4.22099 1.28396 3.26154 1.39351 2.37513C1.42339 2.13279 1.53958 1.66801 1.57943 1.62485C1.58606 1.61821 1.74542 1.76097 1.93133 1.94023C2.38614 2.37513 2.69157 2.63741 3.15304 2.97935C4.61709 4.06827 6.06122 4.66914 7.55183 4.8086C8.34528 4.88161 8.61087 4.84175 8.7171 4.63931C8.77022 4.53639 8.77022 4.50979 8.71379 4.20774C8.41828 2.61085 9.43755 1.07044 11.0211 0.721848C11.4228 0.632211 11.9905 0.655456 12.3988 0.774966Z" fill="white"/>
                                                 </svg>                                                                                      
                                         </a>
-                                        <a href="" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
+                                        <a href="https://in.linkedin.com/" target="_blank" class="svg-box d-flex align-items-center justify-content-center zoom">                                      
                                             <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.67188 0.168662C0.93125 0.340537 0.346875 0.865537 0.0875 1.59366C0.025 1.77179 0.015625 1.85616 0.015625 2.26554C0.015625 2.69679 0.021875 2.75304 0.1 2.96241C0.221875 3.29679 0.359375 3.51241 0.625 3.78116C0.88125 4.03741 1.10625 4.18429 1.43125 4.30616C1.70938 4.40929 2.30938 4.43741 2.6375 4.36241C3.35 4.19366 3.9625 3.61241 4.1875 2.89054C4.27187 2.61866 4.30312 2.14679 4.25313 1.86554C4.12813 1.13741 3.5125 0.443662 2.79688 0.218662C2.51875 0.131162 1.95 0.106162 1.67188 0.168662ZM2.50938 0.734287C2.96875 0.853037 3.34063 1.15616 3.54375 1.56866C3.94375 2.38741 3.59375 3.33429 2.75 3.73116C2.35313 3.91554 1.76875 3.87179 1.34063 3.62179C0.8375 3.33116 0.5625 2.84991 0.5625 2.26241C0.5625 1.49054 1.10938 0.843662 1.875 0.709287C2.05 0.678037 2.34063 0.690537 2.50938 0.734287Z" fill="white"/>
                                                 <path d="M11.0785 4.70625C10.3879 4.83437 9.74099 5.15312 9.26599 5.6L9.06286 5.7875V5.59062C9.05974 5.25625 8.90036 5.0125 8.63161 4.9375C8.47224 4.89375 5.86911 4.89687 5.70974 4.94063C5.54411 4.98438 5.35349 5.16562 5.31286 5.3125C5.29099 5.39062 5.28474 7.1125 5.28786 10.475L5.29724 15.5156L5.36911 15.6312C5.40974 15.6969 5.49411 15.7719 5.57536 15.8094C5.70349 15.8719 5.75349 15.875 7.31599 15.875C8.91911 15.875 8.92224 15.875 9.04411 15.8031C9.11286 15.7656 9.19724 15.6937 9.23161 15.6469C9.29724 15.5594 9.29724 15.5437 9.31286 12.4437C9.32849 9.69375 9.33786 9.3125 9.38161 9.18437C9.58786 8.59375 9.94724 8.24687 10.4972 8.10625C11.0535 7.96562 11.8066 8.28437 12.0722 8.77812C12.2472 9.1 12.2504 9.1375 12.2504 12.4156C12.2504 15.2844 12.2535 15.4281 12.3097 15.55C12.341 15.6219 12.4222 15.7188 12.4879 15.7687L12.6035 15.8594L14.0441 15.8687C14.8379 15.875 15.5316 15.8687 15.5879 15.8594C15.7097 15.8375 15.916 15.6625 15.966 15.5375C15.9941 15.475 16.0004 14.4438 15.991 11.625L15.9816 7.79688L15.9097 7.51562C15.5254 6.05625 14.5097 5.0625 13.0629 4.73125C12.7316 4.65625 11.4347 4.64062 11.0785 4.70625ZM13.0004 5.29688C13.5441 5.42812 14.0129 5.68437 14.4254 6.075C14.8816 6.50313 15.1597 6.975 15.3566 7.64062C15.4191 7.85625 15.4191 7.93437 15.4285 11.5844L15.441 15.3125H14.141H12.8441L12.841 14.0844C12.8379 13.4125 12.8254 12.0094 12.8129 10.9688C12.7879 8.9125 12.791 8.92812 12.6004 8.53125C12.491 8.30312 12.1066 7.91875 11.8441 7.775C11.2285 7.43437 10.5629 7.41875 9.92224 7.73438C9.47849 7.95 9.10661 8.35625 8.93474 8.80937C8.78161 9.21562 8.78161 9.24687 8.78161 12.3781V15.3125H7.32849H5.87536V10.3906V5.46875L7.19724 5.475L8.51599 5.48438L8.53161 6.3375L8.54724 7.19063L8.98161 6.74375C9.22224 6.49687 9.49411 6.21562 9.59099 6.11562C9.99099 5.69375 10.5035 5.42188 11.1566 5.27812C11.5191 5.2 12.641 5.20937 13.0004 5.29688Z" fill="white"/>
@@ -411,7 +410,7 @@
             </div>      
         </div>
         <div class="border_bottom pt-lg-65 pt_30 "></div>
-        <p class="fw-400 text-14 lh-21 ff-outfit clr-white pt-3 text-center">© 2024 Cybertise</p>
+        <p class="fw-400 text-14 lh-21 ff-outfit clr-white pt-3 text-center mb-0 pb-3">© 2024 Cybertise</p>
         <div class="topBtn pulse d-flex align-items-center justify-content-center ">
             <svg  xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#BAFF00"
                     class="bi bi-chevron-double-up" viewBox="0 0 16 16">
@@ -425,6 +424,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
