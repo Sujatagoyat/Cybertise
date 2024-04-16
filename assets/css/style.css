@@ -209,6 +209,16 @@
      bottom: -23px;
      filter: blur(24px);
 }
+.data-ellipse-1{
+      right: 0;
+      bottom: -51%;
+      z-index: -1;
+}
+.data-ellipse-2{
+    left: 50%;
+    bottom: -51%;
+    z-index: -1;
+}
 /* ================================= our-services ======================================== */
 .services-bg-img{
     background-image: url(../images/png/services-bg-img.png);
@@ -234,7 +244,13 @@
 .cursor-pointer{
     cursor: pointer;
 }
-
+.services-linear-gradient{
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.44) 25.4%, rgba(17, 17, 16, 0) 25.4%, #0C0C0C 70.63%);
+    width: 100%;
+    height: 104px;
+    bottom: -95px;
+    /* filter: blur(25px); */
+}
 
 
 @media (max-width:992px) {
