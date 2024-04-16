@@ -359,6 +359,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 5px;
 }
 .pb-lg-32{
     padding-bottom: 32px;
@@ -370,6 +371,8 @@
 }
 .infra-ellipse{
     position: absolute;
+    left: 0;
+    top: 10%;
 }
 
 
