@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fs-s: 14px;
+    --fs-sm: 13px;
+    --fs-md: 24px;
+    --fs-lg: 38px;
+    --fs-xl: 40px;
+    /*--- font clr ----------  */
+    --fc-white: #FFFFFF;
+    --fc-navbg: #12121299;
+    --fc-black: #111111;
+    --fc-green: #BAFF00;
+    --fc-darkgreen:#0C0C0C;
+    --fc-borderclr:#3A3B3B;
+}
+
+.custom-container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ======================== font clr =========================== */
+.clr-white {
+    color: var(--fc-white);
+}
+
+.nav-bg-clr {
+    background: var(--fc-navbg);
+}
+
+.clr-black {
+    color: var(--fc-black);
+}
+.clr-green{
+    color: var(--fc-green);
+}
+
+/* ============== font size ============================== */
+.text-14 {
+    font-size: var(--fs-s);
+}
+
+.text-16 {
+    font-size: var(--fs-sm);
+}
+
+.text-24 {
+    font-size: var(--fs-md);
+}
+
+.text-48 {
+    font-size: var(--fs-lg);
+}
+
+.text-64 {
+    font-size: var(--fs-xl);
+}
+
+/* ============================ line height ========================= */
+.lh-24 {
+    line-height: 24px;
+}
+
+.lh-61 {
+    line-height: 41.76px;
+}
+
+.lh-52 {
+    line-height: 52.8px;
+}
+
+.lh-26 {
+    line-height: 26.4px;
+}
+
+.lh-57 {
+    line-height: 57.6px;
+}
+
+.lh-33 {
+    line-height: 33.6px;
+}
+
+.lh-21 {
+    line-height: 21px;
+}
+
+/* ========================= font weight ================================ */
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.ff-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* =============================== header =========================== */
+.bg-hero-img {
+    background-image: url(../images/png/bg-img-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-body-clr{
+    background: var(--fc-darkgreen);
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-lg-40 {
+    gap: 40px;
+}
+
+.h-90 {
+    height: 90px;
+}
+
+.max-w-582 {
+    max-width: 582.7px;
+}
+.dis-btn{
+    padding: 14px 28px;
+    background: var(--fc-green);
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+.flex-grow{
+    flex-grow: 1 !important;
+}
+.pt-lg-23{
+    padding-top: 23px;
+}
+.pb-lg-32{
+    padding-bottom: 32px;
+}
+/* ======================================= 1K+ ============================================ */
+.bg-sec-clr{
+    background: var(--fc-darkgreen);
+}
+.outer-box{
+    max-width: 1036px;
+    width: 100%;
+    background-image: url(../images/png/1k-sec-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid var(--fc-borderclr);
+    border-radius: 24px;
+    /* min-height: ; */
+    padding: 36px 40px 35px 40px;
+}
+.linear-gradient{
+   /* width: 1440px; */
+   width: 100%;
+    height: 126px;
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.44) 25.4%, rgba(17, 17, 16, 0.29) 25.4%, #0C0C0C 70.63%);
+
+}
+.pt-lg-31{
+    padding-top: 31px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+.ellipse-sec-2{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    filter: blur(5px);
+}
+/* ====================================== data is safe ============================================= */
+
+.pt-13{
+    padding-top: 13px;
+}
+.py-lg-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width:992px) {
+
+    .overFlowHidden {
+        overflow: hidden !important;
+    }
+
+    ul.menulist.show {
+        right: 0;
+    }
+
+    .menuIcon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 5;
+        transition: all 300ms linear;
+        /* top: 31px; */
+        right: 12px;
+        /* position: fixed; */
+    }
+
+    .menuIcon>span {
+        width: 100%;
+        height: 4px;
+        background: var(--fc-white);
+        position: relative;
+        z-index: 3;
+        transition: all 300ms linear;
+    }
+
+    /* .menuIcon.show>span {
+        top: -10px !important;
+        position: relative !important;
+    } */
+
+    .menulist {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: var(--fc-darkgreen);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 3;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms linear;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(56deg) translateY(0px);
+        transition: all 300ms linear;
+        position: relative;
+        top: 8px;
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 300ms;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(129deg) translateY(0px);
+        transition: all 300ms linear;
+        position: relative;
+        top: -18px;
+    }
+}
+@media (min-width:576px) {
+    :root{
+        --fs-xl: 64px;
+        --fs-lg: 48px;
+        --fs-sm: 16px;
+    }
+    .lh-61 {
+        line-height: 61.76px;
+    }
+}
+@media (min-width:768px) {
+    .outer-box{
+        max-width: 1036px;
+        width: 100%;
+        background-image: url(../images/png/1k-sec-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid var(--fc-borderclr);
+        border-radius: 24px;
+        /* min-height: ; */
+        padding: 36px 75px 35px 40px;
+    }
+}
+@media (min-width:992px) {
+    .max-w-513{
+        max-width: 513px;
+    }
+    .green-line::after{
+        content: "";  
+        width: 1px;
+        background: var(--fc-green);
+        position: absolute;
+        height: 264px;
+        top: 8px;
+        left: -15px;
+    }
+    .max-w-527{
+        max-width: 527px;
+    }
+    .max-w-511{
+        max-width: 511px;
+    }
+    .max-w-507{
+        max-width: 507px;
+    }
+    .pb-lg-90{
+        padding-bottom: 90px;
+    }
+}
