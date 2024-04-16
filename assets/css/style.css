@@ -277,14 +277,14 @@
     background: linear-gradient(180deg, rgba(12, 12, 12, 0.44) 25.4%, rgba(17, 17, 16, 0) 25.4%, #0C0C0C 70.63%);
     width: 100%;
     height: 104px;
-    bottom: -32px;
+    bottom: -31px;
     z-index: -1;
     /* filter: blur(25px); */
 }
 
 /* ================================== further services ========================================== */
 .bg-img {
-    background-image: url(../images/png/bg-img.png);
+    background-image: url(../images/png/further-services-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -427,6 +427,16 @@
 .pt_30{
     padding-top: 30px;
 }
+/* ======================================= offensive security ================================== */
+.max-w-527{
+    max-width: 527px;
+}
+.mt-lg-150{
+    margin-top: 150px;
+}
+/* .max-w-581{
+    max-width: 581px;
+} */
 
 @media (max-width:992px) {
 
