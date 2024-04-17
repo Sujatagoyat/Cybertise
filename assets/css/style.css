@@ -256,7 +256,7 @@
 }
 
 .data-ellipse-1 {
-    right: 0;
+    right: -68%;
     bottom: -51%;
     z-index: -1;
 }
@@ -451,6 +451,9 @@ border-image: linear-gradient(to right, rgba(186, 255, 0, 0.4) 3.73%, rgba(0, 17
     position: absolute;
     left: 0;
     top: 10%;
+}
+.pb_18{
+    padding-bottom: 18px;
 }
 
 /* ========================================== footer =================================================== */
